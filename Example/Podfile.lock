@@ -1,0 +1,23 @@
+PODS:
+  - pop (1.0.12)
+  - Zopup (1.0.0):
+    - pop
+
+DEPENDENCIES:
+  - Zopup (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - pop
+
+EXTERNAL SOURCES:
+  Zopup:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  Zopup: 65631387209f3baa9d8291f61ee446944c4422c6
+
+PODFILE CHECKSUM: 511e33534ce72b15e3f4d3c516d75b0cd7d09231
+
+COCOAPODS: 1.10.0

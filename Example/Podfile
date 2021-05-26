@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Zopup_Example' do
+  pod 'Zopup', :path => '../'
+
+  target 'Zopup_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
