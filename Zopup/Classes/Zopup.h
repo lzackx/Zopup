@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)popupView:(UIView *)view;
 - (void)popupViewController:(UIViewController *)viewController;
 - (void)schedule;
+- (void)clearOperations;
 
 @end
 

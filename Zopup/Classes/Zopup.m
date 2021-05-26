@@ -91,6 +91,11 @@ static Zopup *_shared = nil;
 	[self.popupWindow setHidden:YES];
 }
 
+- (void)clearOperations {
+	[self.operationsLock lock];
+	[self.popupOperations removeAllObjects];
+	[self.operationsLock unlock];
+}
 
 // MARK: - Public Methods
 - (void)setupPopupBackgroundColor:(UIColor *)popupBackgroundColor {
