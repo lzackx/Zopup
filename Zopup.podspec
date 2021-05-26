@@ -20,6 +20,12 @@ A FIFO queue popup tool
   s.source           = { :git => 'https://github.com/lzackx/Zopup.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.ios.deployment_target = '10.0'
-  s.source_files = 'Zopup/Classes/**/*.{h,m}'
+	s.source_files = 'Zopup/Classes/**/*.{h,m}'
+	s.public_header_files = [
+	'Zopup/Classes/Zopup.h',
+	]
+	s.private_header_files = [
+	'Zopup/Classes/ZopupPrivate.h',
+	]
   s.dependency 'pop'
 end

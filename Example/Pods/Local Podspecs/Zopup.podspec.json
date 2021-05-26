@@ -19,6 +19,12 @@
     "ios": "10.0"
   },
   "source_files": "Zopup/Classes/**/*.{h,m}",
+  "public_header_files": [
+    "Zopup/Classes/Zopup.h"
+  ],
+  "private_header_files": [
+    "Zopup/Classes/ZopupPrivate.h"
+  ],
   "dependencies": {
     "pop": [
 
