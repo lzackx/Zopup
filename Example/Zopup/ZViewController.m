@@ -32,14 +32,14 @@
 	
 	UIView *v = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
 	v.backgroundColor = [UIColor cyanColor];
-	[[Zopup shared] popupView:v];
+	[[Zopup shared] addPopupWithView:v];
 	
 	UIViewController *vc = [[UIViewController alloc] init];
 	vc.view.backgroundColor = [UIColor clearColor];
 	[vc.view setUserInteractionEnabled: YES];
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideWithTap:)];
 	[vc.view addGestureRecognizer:tap];
-	[[Zopup shared] popupViewController:vc];
+	[[Zopup shared] addPopupWithViewController:vc];
 
 	[[Zopup shared] schedule];
 }

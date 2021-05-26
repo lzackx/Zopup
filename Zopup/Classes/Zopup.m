@@ -102,7 +102,7 @@ static Zopup *_shared = nil;
 	self.popupWindow.backgroundColor = popupBackgroundColor;
 }
 
-- (void)popupView:(UIView *)view {
+- (void)addPopupWithView:(UIView *)view {
 	__weak typeof(self) wSelf = self;
 	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
 		dispatch_async(dispatch_get_main_queue(), ^{
@@ -114,7 +114,7 @@ static Zopup *_shared = nil;
 	[self.operationsLock unlock];
 }
 
-- (void)popupViewController:(UIViewController *)viewController {
+- (void)addPopupWithViewController:(UIViewController *)viewController {
 	__weak typeof(self) wSelf = self;
 	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
 		dispatch_async(dispatch_get_main_queue(), ^{

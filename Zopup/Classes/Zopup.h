@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 
 - (void)setupPopupBackgroundColor:(UIColor *)popupBackgroundColor;
-- (void)popupView:(UIView *)view;
-- (void)popupViewController:(UIViewController *)viewController;
+- (void)addPopupWithView:(UIView *)view;
+- (void)addPopupWithViewController:(UIViewController *)viewController;
 - (void)schedule;
 - (void)clearOperations;
 
