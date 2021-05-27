@@ -5,7 +5,9 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - Kiwi (3.0.0)
-  - Zopup (0.1.0)
+  - pop (1.0.12)
+  - Zopup (1.0.0):
+    - pop
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -13,9 +15,10 @@ DEPENDENCIES:
   - Zopup (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - FBSnapshotTestCase
     - Kiwi
+    - pop
 
 EXTERNAL SOURCES:
   Zopup:
@@ -24,8 +27,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
-  Zopup: ae23a4a7eb97e316ddcb1bb6f6e451ecaef1c503
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  Zopup: 8025e8d588c5f8266d01422b65930bd67992ec39
 
-PODFILE CHECKSUM: 28b7c1bea1ea98da7e89e2993d1831e2c1a1f4a7
+PODFILE CHECKSUM: ea80687377b49fc4e5a1e42558d66df667690f79
 
 COCOAPODS: 1.10.0

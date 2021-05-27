@@ -348,10 +348,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Zopup_Example/Pods-Zopup_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Zopup/Zopup.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Zopup.h"
 
 FOUNDATION_EXPORT double ZopupVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZopupVersionString[];
