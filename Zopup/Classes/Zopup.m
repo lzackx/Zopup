@@ -43,8 +43,6 @@ static Zopup *_shared = nil;
 		_popupQueue.name = ZOPUP_QUEUQ_NAME;
 		_popupQueue.maxConcurrentOperationCount = 1;
 		_popupVC = [[ZopupViewController alloc] init];
-		UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scheduleWithTap:)];
-		[_popupVC.view addGestureRecognizer: tap];
 		_popupWindow = [[UIWindow alloc] init];
 		_popupWindow.rootViewController = _popupVC;
 		_popupWindow.backgroundColor = [UIColor clearColor];
@@ -54,14 +52,6 @@ static Zopup *_shared = nil;
 		_operationsLock = [[NSLock alloc] init];
 	}
 	return self;
-}
-
-// MARK: - Action
-- (void)scheduleWithTap:(UITapGestureRecognizer *)tap {
-	if (tap.state != UIGestureRecognizerStateEnded) {
-		return;
-	}
-	[self schedule];
 }
 
 // MARK: - Schedule Methods
@@ -166,6 +156,11 @@ static Zopup *_shared = nil;
 	}];
 	[self.popupQueue addOperation:operation];
 	[self popup];
+}
+
+- (void)hideIndividuallyPopup {
+	[self clearPopup];
+	[self hide];
 }
 
 @end

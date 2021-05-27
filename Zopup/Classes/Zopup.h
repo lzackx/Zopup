@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 // MARK: - Popup Individually
 - (void)popupIndividuallyWithView:(UIView *)view;
 - (void)popupIndividuallyWithViewController:(UIViewController *)viewController;
+- (void)hideIndividuallyPopup;
 
 @end
 
