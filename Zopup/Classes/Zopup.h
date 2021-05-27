@@ -13,11 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
+// MARK: - Popup continuously
 - (void)setupPopupBackgroundColor:(UIColor *)popupBackgroundColor;
 - (void)addPopupWithView:(UIView *)view;
 - (void)addPopupWithViewController:(UIViewController *)viewController;
 - (void)schedule;
 - (void)clearOperations;
+
+// MARK: - Popup Individually
+- (void)popupIndividuallyWithView:(UIView *)view;
+- (void)popupIndividuallyWithViewController:(UIViewController *)viewController;
 
 @end
 

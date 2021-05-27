@@ -91,12 +91,6 @@ static Zopup *_shared = nil;
 	[self.popupWindow setHidden:YES];
 }
 
-- (void)clearOperations {
-	[self.operationsLock lock];
-	[self.popupOperations removeAllObjects];
-	[self.operationsLock unlock];
-}
-
 // MARK: - Public Methods
 - (void)setupPopupBackgroundColor:(UIColor *)popupBackgroundColor {
 	self.popupWindow.backgroundColor = popupBackgroundColor;
@@ -141,6 +135,37 @@ static Zopup *_shared = nil;
 	} else {
 		[self hide];
 	}
+}
+
+- (void)clearOperations {
+	[self.operationsLock lock];
+	[self.popupOperations removeAllObjects];
+	[self.operationsLock unlock];
+}
+
+- (void)popupIndividuallyWithView:(UIView *)view {
+	__weak typeof(self) wSelf = self;
+	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[wSelf.popupVC.view addSubview:view];
+		});
+	}];
+	[self.popupQueue addOperation:operation];
+	[self popup];
+}
+
+- (void)popupIndividuallyWithViewController:(UIViewController *)viewController {
+	__weak typeof(self) wSelf = self;
+	NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+		dispatch_async(dispatch_get_main_queue(), ^{
+			viewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+			[wSelf.popupVC presentViewController:viewController animated:NO completion:^{
+				
+			}];
+		});
+	}];
+	[self.popupQueue addOperation:operation];
+	[self popup];
 }
 
 @end
