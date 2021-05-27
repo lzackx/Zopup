@@ -1,6 +1,6 @@
 # Zopup
 
-[![Build Status](https://travis-ci.com/lzackx/Zopup.svg?branch=master)](https://travis-ci.org/lzackx/Zopup)
+[![Build Status](https://github.com/lzackx/Zopup/actions/workflows/ci.yml/badge.svg)](https://github.com/lzackx/Zopup/actions)
 [![Version](https://img.shields.io/cocoapods/v/Zopup.svg?style=flat)](https://cocoapods.org/pods/Zopup)
 [![License](https://img.shields.io/cocoapods/l/Zopup.svg?style=flat)](https://cocoapods.org/pods/Zopup)
 [![Platform](https://img.shields.io/cocoapods/p/Zopup.svg?style=flat)](https://cocoapods.org/pods/Zopup)
