@@ -10,6 +10,7 @@ target 'Zopup_Example' do
   target 'Zopup_Tests' do
     inherit! :search_paths
 
-    
+    pod 'Kiwi'
+    pod 'FBSnapshotTestCase'
   end
 end

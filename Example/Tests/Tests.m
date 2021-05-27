@@ -2,34 +2,44 @@
 //  ZopupTests.m
 //  ZopupTests
 //
-//  Created by lzackx on 05/26/2021.
+//  Created by lzackx on 05/27/2021.
 //  Copyright (c) 2021 lzackx. All rights reserved.
 //
 
-@import XCTest;
+// https://github.com/kiwi-bdd/Kiwi
 
-@interface Tests : XCTestCase
+SPEC_BEGIN(InitialTests)
 
-@end
+describe(@"My initial tests", ^{
 
-@implementation Tests
+  context(@"will fail", ^{
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+      it(@"can do maths", ^{
+          [[@1 should] equal:@2];
+      });
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+      it(@"can read", ^{
+          [[@"number" should] equal:@"string"];
+      });
+    
+      it(@"will wait and fail", ^{
+          NSObject *object = [[NSObject alloc] init];
+          [[expectFutureValue(object) shouldEventually] receive:@selector(autoContentAccessingProxy)];
+      });
+  });
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
+  context(@"will pass", ^{
+    
+      it(@"can do maths", ^{
+        [[@1 should] beLessThan:@23];
+      });
+    
+      it(@"can read", ^{
+          [[@"team" shouldNot] containString:@"I"];
+      });  
+  });
+  
+});
 
-@end
+SPEC_END
 
