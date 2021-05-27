@@ -26,6 +26,8 @@ A FIFO queue popup tool
 	]
 	s.private_header_files = [
 	'Zopup/Classes/ZopupPrivate.h',
+	'Zopup/Classes/ZopupOperation.h',
+	'Zopup/Classes/ZopupViewController.h',
 	]
   s.dependency 'pop'
 end

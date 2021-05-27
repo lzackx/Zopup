@@ -15,14 +15,12 @@
 		2349AA6D6A2A27032455720AC5679CD8 /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B01EF08422270A59BDD17CE72C995B5 /* POPPropertyAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2780FC68FB3024FB78C2BFDB79361334 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AA5565A42CE56023ED141296D084FD /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D310A4DE539E2A147F08E6E342CABD3 /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 109CD8E8DAEE76423280253D4A36AAC5 /* POPBasicAnimation.mm */; };
-		3015120FBBAE3727223CEC89F5A410DD /* ZopupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 57DBA430D89F6255172207D3DBDDDD9A /* ZopupOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		30A49538E109241A24A0C93724CA07C1 /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 577A24EFDB8268261D393393705A5A1B /* POPAnimatableProperty.mm */; };
 		30C86636DAFC1BA9F9B1359E11552212 /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94F0B8116E37A215596A08E38E47C55D /* POPAnimator.mm */; };
 		39D204DE2C3F90396995FA10C9A54AD8 /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 67473C9AB79C77686570239AFD97E4B0 /* POPBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CFE68D2075F805F1C397F5A3AEC1B02 /* Pods-Zopup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3094EA3F98FBAD092976C2EC96C6254C /* Pods-Zopup_Tests-dummy.m */; };
 		3DB937CA949656BC4847352D0B3CF85D /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 399077A77398439336EFAA244DCB95C4 /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421D73616346FC4E0A87C4CF0966F1FB /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0562415EA343CBEF1F985DB21F7E5A36 /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		469FC743723DC8788D453384FAEDEEBF /* ZopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CDE1D2A863017AD0DE37B3D4BBF104 /* ZopupViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		48F9DE6820EACC41DA94BA83297DA79D /* Pods-Zopup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C52D80EB613DF839C6B0F7B4260068 /* Pods-Zopup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A971063E3D6E2682A8200ED8CF8F282 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D30A7024AF2A96DD44AF2BE167F231 /* POPAnimationEventInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4AC44889E42CC7748528F5425ADD8AF8 /* ZopupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B635DC092D8547D4EABFCFB01877CA2 /* ZopupOperation.m */; };
@@ -44,6 +42,7 @@
 		8006F8A209C9246A06F7CED78E8E56A1 /* ZopupPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5746753A2CBECF83B0F9690CB2CFBC /* ZopupPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		80253DB81AE8795C3BD404BC7FF605A4 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 5728DF1CECCD8182FAAB273C1D3E8C07 /* POPAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		827ED7120394E51FF1D4F3AD4BD66CE5 /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7DF59932692D5DB644CFAC2899F0B987 /* POPAnimationTracer.mm */; };
+		83CA3E6A2FEBCB0DD4E141DB29C2BB5D /* ZopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CDE1D2A863017AD0DE37B3D4BBF104 /* ZopupViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		866066208BC63DB73658B9981C316674 /* pop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1CCD61C9F910851C53A75713A85B257 /* pop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9015CEC75D8132CC71AF54AFB9AB2E56 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD82056D7DD1BAF347BE82D6B9C97DF0 /* POPGeometry.mm */; };
 		925536F103AE6D94C31621DE23CE612D /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = D32E11961092DC929C93EFDF29156D5B /* POPSpringAnimation.mm */; };
@@ -58,6 +57,7 @@
 		ADF5A965828A721E84CC591612984349 /* pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBD67A7B10897F5C692260700A588EF /* pop-dummy.m */; };
 		B29C347DF3F7C31840FD2C10E91A61FE /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = E382704827D8131921177D67BF30B164 /* POPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3E9F5C5DE7DE5623ABDDDCE6D350614 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1C241A966AB0F0AF6E7FC991698A57 /* POPVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE76608AB6E8981C6C567301CE7DD9BE /* ZopupOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 57DBA430D89F6255172207D3DBDDDD9A /* ZopupOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF6ABB631195F73BEC6E79AB9F5A571C /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A5079CEB8F72A48B7F71806E682C25 /* POPGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C07A42C69E6D92C0FAF38A82C0A63AD7 /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DE2086709DDACF5763C1FB8FE960CD /* POPCustomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C10D89320990A7707EEC9E268636BC44 /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CD40E08DCCF45BD7726935E6A659539 /* POPAnimationTracerInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -535,9 +535,9 @@
 			files = (
 				792A3C40729BDAB9151C1BDA3ACAAE0D /* Zopup-umbrella.h in Headers */,
 				DE0F2B90D81F9AAB57A3615464EEDDAD /* Zopup.h in Headers */,
-				3015120FBBAE3727223CEC89F5A410DD /* ZopupOperation.h in Headers */,
+				BE76608AB6E8981C6C567301CE7DD9BE /* ZopupOperation.h in Headers */,
 				8006F8A209C9246A06F7CED78E8E56A1 /* ZopupPrivate.h in Headers */,
-				469FC743723DC8788D453384FAEDEEBF /* ZopupViewController.h in Headers */,
+				83CA3E6A2FEBCB0DD4E141DB29C2BB5D /* ZopupViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

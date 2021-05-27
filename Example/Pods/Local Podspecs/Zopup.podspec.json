@@ -23,7 +23,9 @@
     "Zopup/Classes/Zopup.h"
   ],
   "private_header_files": [
-    "Zopup/Classes/ZopupPrivate.h"
+    "Zopup/Classes/ZopupPrivate.h",
+    "Zopup/Classes/ZopupOperation.h",
+    "Zopup/Classes/ZopupViewController.h"
   ],
   "dependencies": {
     "pop": [
